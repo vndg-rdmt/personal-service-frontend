@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+SC:wght@300;500&family=Roboto:wght@500&family=Slackside+One&family=Yuji+Hentaigana+Akari&family=Yuji+Hentaigana+Akebono&display=swap'); */
+
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+    --vhs-blue: rgb(34, 13, 142);
+    --vhs-gray: rgb(170, 170, 170);
+    --typed: rgba(10,10,7, 0.98);
+
+    --font-regular: 'Roboto Mono', monospace;
+    --font-typed: 'Roboto', sans-serif;
+
+    --f-cin: 'Cinzel', serif;
+    --f-cor: 'Cormorant SC', serif;
+    --f-slck: 'Slackside One', cursive;
+
+    --royal-crimson:    rgb(123, 21, 17);
+    --system-light:     rgb(240, 240, 240);
+    --system-dark:      rgb(10, 10, 10);
+}
+
+/* .back_button {
+    border-bottom-style: dashed;
+    border-bottom-width: 0px;
+    transition-duration: 0.1s;
+}
+
+.back_button:hover {
+    transition-duration: 0.1s;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+} */
+
+.filters {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* 
+.vhs-text {
+    filter: blur(0.5px);
+    text-shadow: 6px 0 2px rgba(0, 0, 255, 0.4);
+}
+
+.vhs-text:hover {
+    text-shadow: none;
+}
+
+.colorize {
+    text-shadow: #171D99 -4px 0px 1px, #13562b 3px 0px 1px;
+} */

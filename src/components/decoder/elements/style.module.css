@@ -1,0 +1,24 @@
+.coordinates {
+    position: fixed;
+    height: 30px;
+    width: 240px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    
+    border: 3px solid var(--system-light);
+    color: var(--system-light);
+    font-family: var(--font-regular);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.coordinates * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coordinates *:not(:last-child) {
+    border-right: 3px solid white;
+}

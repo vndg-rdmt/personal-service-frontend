@@ -1,0 +1,17 @@
+.mainPage {
+    border: 8px solid black;
+    padding: 8px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.drawBox {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: var(--typed);
+}

@@ -1,0 +1,42 @@
+
+/*
+Global styling.
+*/
+.strokedLogo {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.strokedSVG {
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+Vertical layout,
+applied when width < height.
+*/
+@media (max-aspect-ratio: 1/1) {
+    .strokedLogo {
+        width: 80vh;
+        height: 50vw;
+        rotate: 90deg;
+    }
+}
+
+/*
+Horizontal layout,
+applied when width > height.
+*/
+@media (min-aspect-ratio: 1/1) {
+    .strokedLogo {
+        width: 40vw;
+        height: 40vh;
+        max-width: 880px;
+    }
+}
