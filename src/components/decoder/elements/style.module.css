@@ -1,5 +1,4 @@
 .coordinates {
-    position: fixed;
     height: 30px;
     width: 240px;
 
@@ -21,4 +20,43 @@
 
 .coordinates *:not(:last-child) {
     border-right: 3px solid white;
+}
+
+.capture_target {
+    width: 60vw;
+    height: 40vh;
+
+    border: 3px solid var(--system-light);
+}
+
+
+
+.filmic_grid {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point *:first-child {
+    rotate: 45deg;
+}
+
+.point *:last-child {
+    rotate: -45deg;
+}
+
+.pointpart {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: var(--system-light);
 }

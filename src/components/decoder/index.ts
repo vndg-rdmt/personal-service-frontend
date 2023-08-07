@@ -1,11 +1,18 @@
+import { CaptureTargetElement } from "./elements/capture-target";
 import { CoordinatesElement } from "./elements/coordinates";
-
+import { FilmicGridElement } from "./elements/filmic-grid";
+import style from './style.module.css'
 
 export class DecoderComponent extends HTMLElement {
     constructor() {
         super();
-        this.append(new CoordinatesElement())
+        this.className = style.decoder;
+        this.append(
+            new CoordinatesElement(),
+            new CaptureTargetElement(),
+            new FilmicGridElement(9),
+        )
     }
 }
 
-customElements.define('screen-interface', DecoderComponent);
+customElements.define('decoder-component', DecoderComponent);
